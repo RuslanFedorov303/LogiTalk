@@ -3,10 +3,10 @@ from socket import *
 import threading
 
 
-from auth import AuthWindow  # ⬅️⬅️⬅️
+from auth import AuthWindow, resource_path  # ⬅️⬅️⬅️
 
 set_appearance_mode("dark")  # Modes: "System" (standard), "Dark", "Light"
-set_default_color_theme("marsh.json.json")
+set_default_color_theme(resource_path("marsh.json.json"))
 
 
 auth_win = AuthWindow()  # ⬅️⬅️⬅️
