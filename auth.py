@@ -31,7 +31,7 @@ class AuthWindow(CTk):
         self.left_frame.pack(side="left", fill="both")
 
         # ТУТ ЗМІНЮЄМО КАРТІНКУ ДЛЯ ФОНУ
-        img_ctk = CTkImage(light_image=Image.open("завантаження.jfif"),
+        img_ctk = CTkImage(light_image=Image.open(resource_path("завантаження.jfif")),
                            size=(450, 400))
         self.img_label = CTkLabel(self.left_frame,text="Welcome",
                                   image=img_ctk, text_color="white",
